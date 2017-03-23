@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge" />
+	<title>background_part</title>
+	<style>
+		html {
+			height:100%;
+		}
+		body {
+			background-color:#EFEEDD;
+			margin:0;
+			height:100%;
+		}
+	</style>
+	<!-- copy these lines to your document head: -->
+
+	<meta name="viewport" content="user-scalable=yes, width=1240" />
+	<link href='https://fonts.googleapis.com/css?family=Luckiest+Guy&subset=latin' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Lato:700&subset=latin' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Lato&subset=latin' rel='stylesheet' type='text/css'>
+	<script type="text/javascript" src="background_part.hyperesources/typed.js"></script>
+	<script type="text/javascript" src="background_part.hyperesources/typed.min.js"></script>
+	<script type="text/javascript" src="background_part.hyperesources/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="background_part.hyperesources/jquery.js"></script>
+	
+	  <script src="http://www.noteflight.com/clientapi/2.0.0/nfclient.js"></script>
+	  
+	  	
+	 
+	  
+	  <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+	  
+	  <script type="text/javascript" src="background_part.hyperesources/typed.js"></script>
+	<style>
+	.typed-cursor{
+	    opacity: 0;
+	}
+	</style>
+ 
+  <script type="text/javascript">
+  window.rectsIndex = 0;
+ window.rectGroups = document.getElementsByClassName('RectGroup');
+  
+  function myCallback(hypeDocument, element, event) {
+    if (isScalePossible()){
+      window.myHypeContainerId = hypeDocument.documentId();
+      $('#' + window.myHypeContainerId).css({
+        '-moz-transform-origin': '0% 0%',
+        '-webkit-transform-origin': '0% 0%',
+        '-ms-transform-origin': '0% 0%',
+        '-o-transform-origin': '0% 0%',					
+        'transform-origin': '0% 0%',
+        margin: 0
+      });
+      scaleSite();
+      $(window).resize(scaleSite);
+    }
+    return true;
+  }
+  if("HYPE_eventListeners" in window === false) {
+    window.HYPE_eventListeners = Array();
+  }
+  window.HYPE_eventListeners.push({"type":"HypeDocumentLoad", "callback":myCallback});
+  function scaleSite()
+  {
+  	var hypeContainer = $('#' + window.myHypeContainerId);
+    var containerWidth = hypeContainer.width();
+    var containerHeight = hypeContainer.height();
+    var parentWidth = hypeContainer.parent().width();
+    var parentHeight = hypeContainer.parent().height();
+    var scaleWidth = parentWidth / containerWidth;
+    var scaleHeight = parentHeight / containerHeight;
+    var scale = Math.min(scaleWidth, scaleHeight);
+    var left = (containerWidth * scale < parentWidth) ? ((parentWidth - (containerWidth * scale)) / 2) + 'px' : '0px';
+    var top = (containerHeight * scale < parentHeight) ? ((parentHeight - (containerHeight * scale)) / 2) + 'px' : '0px' ;
+    hypeContainer.css({
+        "-moz-transform"    : "scale("+scale+")",
+        "-webkit-transform" : "scale("+scale+")",
+        "-ms-transform"     : "scale("+scale+")",
+        "-o-transform"      : "scale("+scale+")",
+        "transform"         : "scale("+scale+")",
+        "left" : left,
+        "top" : top
+    });
+  }
+  function isScalePossible() 
+  {
+    can = 'MozTransform' in document.body.style;
+    if(!can) can = 'webkitTransform' in document.body.style;
+    if(!can) can = 'msTransform' in document.body.style;
+    if(!can) can = 'OTransform' in document.body.style;
+    if(!can) can = 'transform' in document.body.style;
+    if(!can) can = 'Transform' in document.body.style;
+    return can;
+  }
+</script>
+
+	
+	
+	
+	
+	  
+	  
+	
+	
+
+	<!-- end copy -->
+  </head>
+  <body>
+	<!-- copy these lines to your document: -->
+
+	<div id="backgroundpart_hype_container" style="margin:auto;position:relative;width:1240px;height:800px;overflow:hidden;" aria-live="polite">
+		<script type="text/javascript" charset="utf-8" src="background_part.hyperesources/backgroundpart_hype_generated_script.js?36337"></script>
+	</div>
+
+	<!-- end copy -->
+	
+
+
+	<!-- text content for search engines: -->
+
+	<div style="display:none">
+
+		<div>next</div>
+		<div>previous</div>
+		<div></div>
+		<div>Add a Background Part to this Melody</div>
+		<div>Check Note</div>
+		<div>Directions:
+
+ - Enter notes in the bottom staff where you see the 4  blue rests.
+  
+- Use notes that are 1 SKIP either above or below the melody note in the top part.
+
+-Do not add notes in place of the grey rests.
+
+-Click “Check My Work” when you are done. 
+
+ 
+</div>
+		<div>Check My Work</div>
+		<div>Go to
+Background Exercise</div>
+		<div>Add a Background Part Introduction</div>
+		<div>One of the most challenging hurdles for our young composers is controlling consonance and dissonance when adding their first background part to their main melody. We have leveraged Noteflight's API to build exercises that give learners instant feedback when making note selections for their harmony parts.
+
+Planned implemenations include the functionality to give users additional details about the notes they've chosen as well as other ehancements.
+
+Please send feedback and comments to support@yciw.net
+
+Thank you!
+YCIW Team
+</div>
+		<div>Enter a note 1 SKIP above or 1 SKIP below the note G: </div>
+		<div>Enter two half notes in the bottom staff that are each 1 SKIP above or below each note in the top staff.</div>
+		<div>Great work!</div>
+		<div>Start Over</div>
+		<div>Enter 1 whole note that is exactly 1 SKIP away from each of the Blue notes in the top part:</div>
+		<div>Next</div>
+		<div>1 STEP</div>
+		<div>1 SKIP</div>
+		<div>
+</div>
+		<div>whole note</div>
+
+	</div>
+
+	<!-- end text content: -->
+
+  </body>
+</html>
