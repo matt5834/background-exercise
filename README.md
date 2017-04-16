@@ -11,5 +11,5 @@ It was created using an application called [Hype](http://tumult.com/hype/pro/)
 
 The background_part.hype file is only for launching the original program that created this webpage:  Hype Tumult
 
-#To view a live version of the site visit: [yciw.net/backgrou_part](http://yciw.net/background_part/)
+#To view a live version of the site visit: [yciw.net/background_part](http://yciw.net/background_part/)
 
